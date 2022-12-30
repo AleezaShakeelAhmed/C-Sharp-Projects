@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F009FA9D-680A-41E8-ABAF-6F71ACA286C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hotelwithforms</RootNamespace>
+    <AssemblyName>hotelwithforms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admincs.Designer.cs">
+      <DependentUpon>admincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="application.Designer.cs">
+      <DependentUpon>application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="availablerooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="availablerooms.Designer.cs">
+      <DependentUpon>availablerooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="billreceivedaffterdiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billreceivedaffterdiscount.Designer.cs">
+      <DependentUpon>billreceivedaffterdiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\credentials.cs" />
+    <Compile Include="BL\customer.cs" />
+    <Compile Include="BL\product.cs" />
+    <Compile Include="BL\room.cs" />
+    <Compile Include="BL\worker.cs" />
+    <Compile Include="bookfordays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookfordays.Designer.cs">
+      <DependentUpon>bookfordays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booktheroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booktheroom.Designer.cs">
+      <DependentUpon>booktheroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calculateprofitloss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculateprofitloss.Designer.cs">
+      <DependentUpon>calculateprofitloss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calculateroms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculateroms.Designer.cs">
+      <DependentUpon>calculateroms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepriceofroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepriceofroom.Designer.cs">
+      <DependentUpon>changepriceofroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="currentproducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="currentproducts.Designer.cs">
+      <DependentUpon>currentproducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="currentroomsdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="currentroomsdata.Designer.cs">
+      <DependentUpon>currentroomsdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="currentroomsincustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="currentroomsincustomer.Designer.cs">
+      <DependentUpon>currentroomsincustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerform.Designer.cs">
+      <DependentUpon>customerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerrecordbookedroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerrecordbookedroom.Designer.cs">
+      <DependentUpon>customerrecordbookedroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletecustomerrecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletecustomerrecord.Designer.cs">
+      <DependentUpon>deletecustomerrecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteworkersandupdateworkersinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteworkersandupdateworkersinformation.Designer.cs">
+      <DependentUpon>deleteworkersandupdateworkersinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discount.Designer.cs">
+      <DependentUpon>discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\credentialsDL.cs" />
+    <Compile Include="DL\customerDL.cs" />
+    <Compile Include="DL\productDL.cs" />
+    <Compile Include="DL\roomDL.cs" />
+    <Compile Include="DL\workerDL.cs" />
+    <Compile Include="edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeerecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeerecord.Designer.cs">
+      <DependentUpon>employeerecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="goods.Designer.cs">
+      <DependentUpon>goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="items.Designer.cs">
+      <DependentUpon>items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order.Designer.cs">
+      <DependentUpon>order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paybillforrestaurantitems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paybillforrestaurantitems.Designer.cs">
+      <DependentUpon>paybillforrestaurantitems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paybillforroombooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paybillforroombooking.Designer.cs">
+      <DependentUpon>paybillforroombooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productform.Designer.cs">
+      <DependentUpon>productform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist.Designer.cs">
+      <DependentUpon>receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seepurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seepurchases.Designer.cs">
+      <DependentUpon>seepurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signin.Designer.cs">
+      <DependentUpon>signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signupcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signupcs.Designer.cs">
+      <DependentUpon>signupcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="specificcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="specificcustomer.Designer.cs">
+      <DependentUpon>specificcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usehotelrestaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usehotelrestaurant.Designer.cs">
+      <DependentUpon>usehotelrestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="workerform.Designer.cs">
+      <DependentUpon>workerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workerssalaryrecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="workerssalaryrecord.Designer.cs">
+      <DependentUpon>workerssalaryrecord.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admincs.resx">
+      <DependentUpon>admincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="application.resx">
+      <DependentUpon>application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="availablerooms.resx">
+      <DependentUpon>availablerooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billreceivedaffterdiscount.resx">
+      <DependentUpon>billreceivedaffterdiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookfordays.resx">
+      <DependentUpon>bookfordays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booktheroom.resx">
+      <DependentUpon>booktheroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculateprofitloss.resx">
+      <DependentUpon>calculateprofitloss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculateroms.resx">
+      <DependentUpon>calculateroms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepriceofroom.resx">
+      <DependentUpon>changepriceofroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="currentproducts.resx">
+      <DependentUpon>currentproducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="currentroomsdata.resx">
+      <DependentUpon>currentroomsdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="currentroomsincustomer.resx">
+      <DependentUpon>currentroomsincustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerform.resx">
+      <DependentUpon>customerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerrecordbookedroom.resx">
+      <DependentUpon>customerrecordbookedroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletecustomerrecord.resx">
+      <DependentUpon>deletecustomerrecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteworkersandupdateworkersinformation.resx">
+      <DependentUpon>deleteworkersandupdateworkersinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="discount.resx">
+      <DependentUpon>discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeerecord.resx">
+      <DependentUpon>employeerecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="goods.resx">
+      <DependentUpon>goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="items.resx">
+      <DependentUpon>items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order.resx">
+      <DependentUpon>order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paybillforrestaurantitems.resx">
+      <DependentUpon>paybillforrestaurantitems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paybillforroombooking.resx">
+      <DependentUpon>paybillforroombooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productform.resx">
+      <DependentUpon>productform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receptionist.resx">
+      <DependentUpon>receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seepurchases.resx">
+      <DependentUpon>seepurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signin.resx">
+      <DependentUpon>signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signupcs.resx">
+      <DependentUpon>signupcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="specificcustomer.resx">
+      <DependentUpon>specificcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usehotelrestaurant.resx">
+      <DependentUpon>usehotelrestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerform.resx">
+      <DependentUpon>workerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workerssalaryrecord.resx">
+      <DependentUpon>workerssalaryrecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\myhotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\a.jpg" />
+    <None Include="Resources\s.jpg" />
+    <None Include="Resources\x.jpg" />
+    <None Include="Resources\y.jpg" />
+    <None Include="Resources\z.jpg" />
+    <None Include="Resources\a12.jpg" />
+    <None Include="Resources\e1.jpg" />
+    <None Include="Resources\c9.jpg" />
+    <None Include="Resources\c8.jpg" />
+    <None Include="Resources\c7.jpg" />
+    <None Include="Resources\b10.jpg" />
+    <None Include="Resources\a11.jpg" />
+    <None Include="Resources\d1.jpg" />
+    <None Include="Resources\c6.jpg" />
+    <None Include="Resources\b9.jpg" />
+    <None Include="Resources\a10.jpg" />
+    <None Include="Resources\b8.jpg" />
+    <None Include="Resources\a9.jpg" />
+    <None Include="Resources\b7.jpg" />
+    <None Include="Resources\a8.jpg" />
+    <None Include="Resources\c5.jpg" />
+    <None Include="Resources\b6.jpg" />
+    <None Include="Resources\a7.jpg" />
+    <None Include="Resources\e.jpg" />
+    <None Include="Resources\d.jpg" />
+    <None Include="Resources\c4.jpg" />
+    <None Include="Resources\b5.jpg" />
+    <None Include="Resources\a6.jpg" />
+    <None Include="Resources\c3.jpg" />
+    <None Include="Resources\b4.jpg" />
+    <None Include="Resources\a5.jpg" />
+    <None Include="Resources\c2.jpg" />
+    <None Include="Resources\b3.jpg" />
+    <None Include="Resources\a4.jpg" />
+    <None Include="Resources\b2.jpg" />
+    <None Include="Resources\a3.jpg" />
+    <None Include="Resources\c1.jpg" />
+    <None Include="Resources\b1.jpg" />
+    <None Include="Resources\a2.jpg" />
+    <None Include="Resources\a1.jpg" />
+    <None Include="Resources\c.jpg" />
+    <None Include="Resources\b.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
