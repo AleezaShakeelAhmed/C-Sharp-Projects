@@ -1,0 +1,11 @@
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\bin\Debug\Dynamic Control Assignment.exe.config
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\bin\Debug\Dynamic Control Assignment.exe
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\bin\Debug\Dynamic Control Assignment.pdb
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic Control Assignment.csproj.AssemblyReference.cache
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic Control Assignment.csproj.SuggestedBindingRedirects.cache
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic_Control_Assignment.Form1.resources
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic_Control_Assignment.Properties.Resources.resources
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic Control Assignment.csproj.GenerateResource.cache
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic Control Assignment.csproj.CoreCompileInputs.cache
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic Control Assignment.exe
+D:\OOP\C sharp\Dynamic Control Assignment\Dynamic Control Assignment\obj\Debug\Dynamic Control Assignment.pdb
